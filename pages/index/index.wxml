@@ -1,0 +1,18 @@
+<view class="section">
+  <view style='width:100%;height:20rpx;'></view>
+
+  <block wx:for="{{files}}" wx:key="*this">
+    <view class="weui-uploader__file wai-out" bindtap="previewImage" id="{{item}}" style='margin-right:0'>
+       <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" style='width:100rpx;height:100rpx;margin-right:9px;margin-bottom:9px;' /> 
+    </view> 
+  </block> 
+  
+   <!-- 这个是加号 -->
+  <view class="weui-uploader__input-box out-input" style='width:100rpx;height:100rpx;'>
+   <view class="weui-uploader__input" bindtap="chooseImage"></view>
+   
+  </view>
+</view> 
+<view>
+  <button bindtap="submit_pics" type="primary" style="position: fixed;bottom:0;width:100%" >多图上传</button>
+</view>

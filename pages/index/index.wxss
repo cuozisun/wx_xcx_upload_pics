@@ -1,0 +1,5 @@
+/**index.wxss**/
+@import '/weui.wxss';
+.section{
+	height: 200rpx;
+}
