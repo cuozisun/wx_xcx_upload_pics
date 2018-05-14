@@ -2,6 +2,11 @@ Page({
 	onLoad:function(){
 		console.log('进入');
 	},
+	/**
+	 *@des:强制获取授权不授不让走方法
+	 *@author:孙双洋
+	 *@date:20180514
+	*/
 	getUserInfo_function:function(e){
 		console.log(e);
 		if(e.detail.errMsg === 'getUserInfo:fail auth deny'){
