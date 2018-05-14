@@ -1,0 +1,9 @@
+<view class="page_flex">
+	<view class="margin_style stay_center">为保证您更好的体验本程序需要您进行授权,本次授权仅获取您的头像与昵称信息用于信息注册,请放心使用</view>
+	<view class="margin_style">
+		<image src="/images/timg.jpg"></image>
+	</view>
+	<view>
+		<button open-type="getUserInfo" bindgetuserinfo="getUserInfo_function">点击授权</button>
+	</view>
+</view>

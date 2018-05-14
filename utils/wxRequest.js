@@ -10,7 +10,6 @@ function uploadFileList(data) {
       wx.uploadFile({
         url: app.globalData.serverUrl+'/Pay/postBusinessImage',
         filePath: item,
-        
         name: 'file',
         success: function (res) {
           resolve(res);

@@ -1,0 +1,10 @@
+.page_flex{
+	height:100vh;display: flex;align-items: center;flex-direction:column
+}
+.margin_style{
+	margin:20px 0;
+}
+.stay_center{
+	width: 90%;
+	margin:0 auto;
+}

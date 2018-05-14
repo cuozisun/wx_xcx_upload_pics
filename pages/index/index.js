@@ -1,8 +1,8 @@
 //index.js
 //获取应用实例
-var wxRequest = require('../../utils/wxRequest')
+var wxRequest = require('../../utils/wxRequest');
 // var server = require('../../utils/server');
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
@@ -13,7 +13,7 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
-    })
+    });
   },
 
   onLoad: function () {
@@ -27,7 +27,7 @@ Page({
   chooseImage:function()
   {
       var that = this;
-      var filse = that.data.files
+      var filse = that.data.files;
       wx.chooseImage({
         count: 1, // 默认9
         sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -36,15 +36,15 @@ Page({
           if(filse.length>=5){
             wx.showToast({
               title:'最多可上传5张'
-            })
+            });
           }else{
             filse.push(res.tempFilePaths[0]);
             that.setData({
              files:filse
-            })
+            });
           }
         }
-      })
+      });
   },
   /**
    *@des:批量上传方法
@@ -62,11 +62,11 @@ Page({
           console.log(res);
         }).then(res=>{
           
-        })
+        });
       }else{
         wx.showToast({
           title:"请选择需上传图片"
-        })
+        });
       }
   }
-})
+});
